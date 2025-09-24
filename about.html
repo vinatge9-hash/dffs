@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About FitCore Gym</title>
+  <meta name="description" content="Learn about FitCore Gym, our training philosophy, and the team that helps members reach their goals.">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#1A1A1A] text-white font-sans">
+
+<header class="bg-[#DC143C] sticky top-0 z-50 shadow">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+    <a href="index.html" class="flex items-center space-x-2">
+      <span class="text-2xl font-bold">FitCore Gym</span>
+    </a>
+    <div class="hidden md:flex space-x-6">
+      <a href="index.html" class="hover:underline">Home</a>
+      <a href="about.html" class="hover:underline">About</a>
+      <a href="index.html#programs" class="hover:underline">Programs</a>
+      <a href="contact.html" class="hover:underline">Contact</a>
+    </div>
+    <a href="contact.html" class="hidden md:inline-flex items-center px-4 py-2 bg-white text-[#DC143C] rounded-full font-semibold hover:bg-gray-100 transition-all duration-300">
+      Join Now
+    </a>
+  </nav>
+</header>
+
+<section class="min-h-screen bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1687676627046-094d418e29c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBsYXclMjBsaWJyYXJ5JTIwd2l0aCUyMGJvb2tzJTIwYW5kJTIwZWxlZ2FudCUyMG9mZmljZSUyMHNldHRpbmd8ZW58MHwwfHx8MTc1ODY1MDAzNnww&ixlib=rb-4.1.0&q=80&w=1080');">
+  <span class="absolute inset-0 bg-black opacity-50"></span>
+  <div class="relative z-10 flex items-center justify-center min-h-screen px-4">
+    <div class="text-center max-w-2xl">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">About FitCore Gym</h1>
+      <p class="text-lg text-gray-200 mb-6">We’re a community-focused fitness hub dedicated to helping every member build strength, resilience, and healthy habits that last a lifetime.</p>
+    </div>
+  </div>
+</section>
+
+<section class="py-16 bg-gray-900">
+  <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div class="space-y-4">
+      <h2 class="text-3xl font-semibold">Our Philosophy</h2>
+      <p class="text-gray-300">Progress comes from consistency, expert guidance, and sustainable training. We tailor programs to your goals, whether you’re new to fitness or pushing to break personal records.</p>
+      <ul class="list-disc list-inside text-gray-300">
+        <li>Evidence-based programming</li>
+        <li>Accessible for all fitness levels</li>
+        <li>Supportive coaching and community</li>
+      </ul>
+    </div>
+    <div class="space-y-4">
+      <img src="https://pixabay.com/get/g7127cf6d1e875df3425c0cf3395ee4feeab7ccacf1859f93f635fe0b2dd53343b54fd5edb90334f34799373cedcd2c79fee6910ec6a31526ca485adf77eee5e3_640.jpg" alt="Our coaching team" class="w-full rounded-lg shadow" />
+      <p class="text-sm text-gray-400">Our trainers are certified professionals dedicated to your success.</p>
+    </div>
+  </div>
+</section>
+
+<section class="py-16 bg-black/70">
+  <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+    <div class="p-4 rounded-lg bg-white/5">
+      <h4 class="mb-2 text-lg">Trainers</h4>
+      <p class="text-sm text-gray-300">Certified professionals with years of experience in coaching clients of all levels.</p>
+    </div>
+    <div class="p-4 rounded-lg bg-white/5">
+      <h4 class="mb-2 text-lg">Facilities</h4>
+      <p class="text-sm text-gray-300">State-of-the-art equipment, clean spaces, and a dedicated functional zone.</p>
+    </div>
+    <div class="p-4 rounded-lg bg-white/5">
+      <h4 class="mb-2 text-lg">Programs</h4>
+      <p class="text-sm text-gray-300">Strength, endurance, mobility, and recovery—designed for you.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-[#1a1a1a] text-white py-8">
+  <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div>
+      <h4 class="text-lg font-semibold mb-2">FitCore Gym</h4>
+      <p class="text-sm text-gray-300">Empowering members to build lifelong healthy habits through science-backed training.</p>
+    </div>
+    <div>
+      <h4 class="text-lg font-semibold mb-2">Contact</h4>
+      <p class="text-sm text-gray-300">123 Flex Street, Suite 100<br/>Metropolis, MT 12345</p>
+    </div>
+    <div>
+      <h4 class="text-lg font-semibold mb-2">Hours</h4>
+      <p class="text-sm text-gray-300">Mon–Fri: 5:00 AM – 11:00 PM<br/>Sat–Sun: 6:00 AM – 9:00 PM</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const sections = document.querySelectorAll('section, header, footer, article');
+  sections.forEach(el => { el.style.opacity = '0'; el.style.transform = 'translateY(20px)'; });
+  const reveal = () => {
+    const viewH = window.innerHeight;
+    sections.forEach(el => {
+      const r = el.getBoundingClientRect();
+      if (r.top < viewH - 100) {
+        el.style.transition = 'opacity 700ms ease-out, transform 700ms ease-out';
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
+      }
+    });
+  };
+  window.addEventListener('scroll', reveal);
+  reveal();
+});
+</script>
+</body>
+</html>
